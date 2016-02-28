@@ -1,11 +1,7 @@
 var express = require('express');
 var app = express();
 var api = require('./api/api.js');
-var http = require('http');
-//var location = require('./api/location/location.js');
 
-
-//app.use('/api/location', location);
 app.get('/api*', api);
 
 app.get('/', function(req, res){
@@ -13,5 +9,4 @@ app.get('/', function(req, res){
 	res.end('successful get');
 });
 
-var server = http.createServer(app);
-server.listen(12345);
+app.listen(12345);
