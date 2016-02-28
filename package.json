@@ -1,0 +1,11 @@
+{
+  "name": "Multilevel-Routing-Express",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./libs/js/main.js"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
